@@ -19,8 +19,16 @@ int main() {
         cout << endl;
         cout << "MENU" << endl;
         cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
+	cout << "1. Sprawdz czy liczba jest pierwsza" << endl;
         cout << "0. Wyjscie" << endl;
         cin >> wyjscie;
+
+	if(wyjscie==1){
+		int n;
+		cout << "Podaj n: ";
+		cin >> n;
+		cout << czyPierwsza(n) << endl;
+	}
     } while(wyjscie != 0);
     return 0;
 }
